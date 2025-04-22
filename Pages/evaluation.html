@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+
+    <h1>Evaluation</h1>
+
+  <main>
+    <section class="analysis">
+      <h2>Nielsen's 10 Usability Heuristics: Problems </h2>
+      <p>When designing the app, some of our problems with the usability heuristics included visbility, help and documentation, and flexibility/ease of use </p>
+    </section>
+
+    <section class="Problems">
+      <h2>Nielsen's 10 Usability Heuiristics: Solutions </h2>
+      <p>Our solutions to these problems included refining the color scheme to allow for maximum visibility and clarity, adding a selection for new users to follow to sign up, as well as clear menu choices relating to which part of the app you wish to use. We also added a recent searches and most searched options to expediate use of the app and learn from user behavior
+        </p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="../Photos/NutriSnap.png" alt="NutriSnap Logo" width="50" style="display: block; margin: 0 auto;"> 
+ </footer>
+
+
+</body>
+</html>

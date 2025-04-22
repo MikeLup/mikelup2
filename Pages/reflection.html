@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <script>
+      fetch("../navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <h1>Reflection</h1>
+
+  <main>
+    <section class="lessons">
+      <h2>Lessons Learned </h2>
+      <p>We learned to always have the end user in mind when designing an interface. By focus on solving the problem you set out to solve and not overcomplicating the design with too many features we learned some of the better ways to have a better product.
+         </p>
+    </section>
+
+    <section class="about">
+      <h2>What went well:</h2>
+      <p>Some of the better parts of the project was the interaction witht he target user. Gettign this input allowed for use to implement the better functions for the user as well as making it a layout that the user finds easy to use. </p>
+    </section>
+
+    <section class="about">
+        <h2>What could be improved:</h2>
+        <p> We could have put more of a focus on some of our storyboards. While we had good boards, there were times where more user feedback was needed and using some of these in storyboards could have helped more. </p>
+      </section>
+
+    <section class ="summary">
+        <h2>Impact:</h2>
+        <p>NutriSnap focus on comparing the rate and leading brands based on sustainability, price, location, nutrition, and popularity. We have a second focus on 
+            informing nutritional values so users can see what they are eating. Lastly, we have tracking and meal history for users to stay consistent. 
+        </p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="../Photos/NutriSnap.png" alt="NutriSnap Logo" width="50" style="display: block; margin: 0 auto;"> 
+ </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+
+    <h1>Project Overview</h1>
+
+  <main>
+    <section class="description">
+      <h2>Why NutriSnap?:</h2>
+      <p>Many people often have to face either maitining thier budget or getting the proper food and nutrion, especially in lower income areas. This causes poor nutrition and general lack of food knowledge.</p>
+    </section>
+
+    <section class="outline">
+      <h2> NutriSnap Aims to: </h2> </h2>
+      <p>Bridge the gap between low-income communities and proper nutrition services, 
+        increase awareness for health and wellness, 
+        and help reduce ailments and illnesses associated with poor nutrition
+        </p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="../Photos/NutriSnap.png" alt="NutriSnap Logo" width="50" style="display: block; margin: 0 auto;">  </footer>
+
+</body>
+</html>

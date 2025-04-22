@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+
+    <h1>Prototype</h1>
+
+  <main>
+    <section class="figma">
+      <h2>Figma:</h2>
+      <p>Figma was used to create the prototype. Drawing some inspiration from Snapchat, the app features a camera setting where images of products can be taken to better understand products as well as a discovery section to find more reccomended products. User searches are also stored and can be favorited to help reccomend products.</p>
+    </section>
+  
+    <section class="feedback">
+      <h2>Feedback</h2>
+      <p>We mostly recieved initial feedback about visibility and documentation. These were two focuses we had when going through different stages.  </p>
+    </section>
+  </main>
+  <footer>
+    <img src="../Photos/NutriSnap.png" alt="NutriSnap Logo" width="50" style="display: block; margin: 0 auto;"> 
+ </footer>
+
+</body>
+</html>

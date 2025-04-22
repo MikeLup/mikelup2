@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+
+    <h1>Design Process</h1>
+
+  <main>
+    <section class="research">
+      <h2>User Research:</h2>
+      <p>The features of the app were based on user input and interactions. Through focus groups, surveys, and interviews we were able to gain what users would most like out of the app and what they are looking for in nutrition. </p>
+    </section>
+
+    <section class="personas">
+      <h2>Personas </h2>
+      <p>Our main persona is this one of Kyle, a younger male from a lower income area. This serves as an example of our perfect target auidence as it is someone who would care very much about nutrition but may not have the most money to spend unresponsively. </p>
+    </section>
+    <section class="maps">
+        <h2>Jourey Maps </h2>
+        <p>Here we have a possible stories for Kyle as he uses NutriSnap for his nutrition. </p>
+      </section>
+      <section class="storyboads">
+        <h2>Storyboards </h2>
+        <p>Here we have the storybaord for some of the features of the app including comparrisons to other products, general information about the product, and the caloric breakdown.  </p>
+      </section>
+
+      <section class="iterations">
+        <h2>Design Iterations </h2>
+        <p>This website showcases my approach to UX/UI design. It includes insights into my design thinking, tools I used, and examples of my work.</p>
+      </section>
+  </main>
+  <footer>
+    <img src="../Photos/NutriSnap.png" alt="NutriSnap Logo" width="50" style="display: block; margin: 0 auto;"> 
+ </footer>
+
+
+</body>
+</html>

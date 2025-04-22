@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <img src="Photos/NutriSnap.png" alt="NutriSnap Logo" width="200" style="display: block; margin: 0 auto;">
+    <h1>Welcome to NutriSnap!</h1>
+
+  <main>
+    <section class="hero" style="text-align: center;">
+      <h2>"The SnapChat of Food" </h2>
+      <p>Find the best foods for you at the best price for your budget</p>
+    </section>
+  </main>
+
+</body>
+</html>
